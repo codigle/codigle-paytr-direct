@@ -1,0 +1,256 @@
+.cdg-pay-shell {
+    width: min(1180px, calc(100% - 32px));
+    margin: 48px auto 72px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 28px;
+    color: #172033;
+}
+.cdg-pay-card,
+.cdg-pay-aside,
+.cdg-pay-message {
+    background: #fff;
+    border: 1px solid #e6eaf0;
+    border-radius: 22px;
+    box-shadow: 0 18px 50px rgba(20, 28, 45, .08);
+}
+.cdg-pay-card { padding: 32px; }
+.cdg-pay-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #edf0f4;
+}
+.cdg-pay-header h1 {
+    margin: 6px 0 8px;
+    font-size: clamp(28px, 4vw, 40px);
+    letter-spacing: -.04em;
+}
+.cdg-pay-header p,
+.cdg-pay-section-title span,
+.cdg-card-main span {
+    margin: 0;
+    color: #687386;
+}
+.cdg-pay-eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .13em;
+    color: #921b35;
+}
+.cdg-pay-lock {
+    border-radius: 999px;
+    background: #eef9f4;
+    color: #137553;
+    padding: 9px 14px;
+    font-weight: 800;
+}
+.cdg-pay-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 24px 0;
+}
+.cdg-pay-summary div,
+.cdg-pay-line,
+.cdg-pay-total {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cdg-pay-summary div {
+    border: 1px solid #edf0f4;
+    border-radius: 14px;
+    padding: 14px;
+}
+.cdg-pay-summary span,
+.cdg-pay-line span {
+    color: #6d7788;
+    font-size: 13px;
+}
+.cdg-pay-section {
+    border-top: 1px solid #edf0f4;
+    padding-top: 26px;
+    margin-top: 26px;
+}
+.cdg-pay-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.cdg-pay-section-title h2,
+.cdg-pay-aside h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.cdg-saved-cards {
+    display: grid;
+    gap: 12px;
+}
+.cdg-saved-card {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #dde3ec;
+    border-radius: 15px;
+}
+.cdg-card-main {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.cdg-card-main div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.cdg-card-brand {
+    min-width: 64px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #f3f5f8;
+    font-size: 11px;
+    font-weight: 900;
+}
+.cdg-cvv {
+    max-width: 82px;
+}
+.cdg-new-card {
+    display: grid;
+    gap: 16px;
+}
+.cdg-new-card label,
+.cdg-cvv {
+    display: grid;
+    gap: 7px;
+    color: #3d4656;
+    font-size: 13px;
+    font-weight: 700;
+}
+.cdg-new-card input,
+.cdg-new-card select,
+.cdg-cvv input {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid #cfd6e1;
+    border-radius: 11px;
+    background: #fff;
+    padding: 10px 13px;
+    font: inherit;
+    color: #172033;
+    box-sizing: border-box;
+}
+.cdg-pay-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+}
+.cdg-paytr-form button {
+    border: 0;
+    border-radius: 11px;
+    background: #921b35;
+    color: #fff;
+    min-height: 48px;
+    padding: 0 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.cdg-paytr-form button:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+.cdg-pay-terms,
+.cdg-pay-note,
+.cdg-pay-status {
+    border-radius: 12px;
+    padding: 13px 15px;
+    font-size: 13px;
+    line-height: 1.55;
+}
+.cdg-pay-terms { background: #f5f7fa; color: #596477; }
+.cdg-pay-note { background: #fff7e8; color: #765312; }
+.cdg-pay-status { margin-bottom: 16px; background: #edf7ff; color: #155a8a; }
+.cdg-pay-aside {
+    align-self: start;
+    position: sticky;
+    top: 24px;
+    padding: 26px;
+}
+.cdg-pay-line {
+    padding: 18px 0;
+    border-bottom: 1px solid #edf0f4;
+}
+.cdg-pay-total {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 19px;
+}
+.cdg-pay-aside ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+    color: #687386;
+    line-height: 1.8;
+    font-size: 13px;
+}
+.cdg-pay-message {
+    width: min(620px, calc(100% - 32px));
+    margin: 80px auto;
+    padding: 36px;
+    text-align: center;
+}
+.cdg-account-list {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 34px;
+}
+.cdg-account-list article {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px;
+    border: 1px solid #e5e9ef;
+    border-radius: 14px;
+}
+.cdg-account-list article > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cdg-account-list span { color: #6d7788; font-size: 13px; }
+@media (max-width: 900px) {
+    .cdg-pay-shell { grid-template-columns: 1fr; }
+    .cdg-pay-aside { position: static; }
+}
+@media (max-width: 640px) {
+    .cdg-pay-card { padding: 20px; }
+    .cdg-pay-summary,
+    .cdg-pay-grid { grid-template-columns: 1fr; }
+    .cdg-saved-card { grid-template-columns: 1fr; }
+    .cdg-pay-section-title { align-items: flex-start; flex-direction: column; }
+}
+.cdg-renew-consent {
+    display: flex !important;
+    grid-template-columns: none !important;
+    align-items: flex-start;
+    gap: 10px !important;
+    cursor: pointer;
+}
+.cdg-renew-consent input[type="checkbox"] {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    min-height: 18px;
+    margin: 2px 0 0;
+    accent-color: #921b35;
+}
+.cdg-renew-consent span { line-height: 1.5; }
